@@ -1,0 +1,14 @@
+
+
+<script>
+    var cunter = 0;
+    var id =  setTimeout(function run(){
+        console.log('Run');
+        cunter++;
+        var c = setTimeout(run,1000);
+        if(cunter >= 5 ){
+            clearTimeout(c)
+        }
+    },1000)
+   
+</script>

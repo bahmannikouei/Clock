@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="./style.css">
+
+    <div class="class1">
+        <div class="divTimer" id="timer">
+            <div id="hour" class="divComponent"></div>
+            <div class="dot">:</div>
+            <div id="min" class="divComponent"></div>
+            <div class="dot">:</div>
+            <div id="sec" class="divComponent"></div>
+             <div id="ampm" class="ampm"></div>
+         </div>
+    </div>
+
+    <a href="https://bahman.app/test.mp4"></a>
+
+
+<script>
+    setTimeout( function timer() {
+        var h = new Date().getHours();
+        var m = new Date().getMinutes();
+        var s = new Date().getSeconds();
+        var ampm = "AM"
+        if(h > 12){
+            h = h - 12;
+            ampm = "PM"
+        }
+        if (h < 10){
+            h = "0" + h
+        }
+        if (m < 10){
+            m = "0" + m
+        }
+        if (s < 10){
+            s = "0" + s
+        }
+
+        document.getElementById('hour').textContent = h;
+        document.getElementById('min').textContent = m;
+        document.getElementById('sec').textContent = s;
+        document.getElementById('ampm').textContent = ampm;
+
+        setTimeout(timer,1000)
+    },1000)
+</script>

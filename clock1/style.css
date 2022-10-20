@@ -1,0 +1,27 @@
+.class1{
+    width: 600px;
+    height: auto;
+    border: 1px solid white;
+}
+body{
+    background-color: rgb(8, 0, 42);
+}
+.divTimer{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+.divComponent {
+    color: antiquewhite;
+    font-size: 200%;
+    border: 1px solid rgba(0, 255, 255, 0.146);
+    padding: 2%;
+}
+.ampm{
+    color: aliceblue;
+    font-size: 100%;
+}
+.dot{
+    color: aliceblue;
+    font-size: 200%;
+}

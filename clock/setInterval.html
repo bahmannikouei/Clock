@@ -1,0 +1,14 @@
+<button onclick="butt()">stop</button>
+<script>
+    function timer(){
+        console.log(new Date());
+    }
+    var id = setInterval(timer,1000)
+
+    function butt(){
+        clearInterval(id)
+    }
+    setTimeout(function(){
+        clearInterval(id)
+    },5000)
+</script>
